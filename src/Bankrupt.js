@@ -10,10 +10,10 @@ const findMVP = require('./MVP');
 const Reports = require('./Reports');
 
 const bankrupt = () => {
-    const numberOfGames = 1000;
-    const timeOut = 6;
+    const numberOfGames = 300;
+    const timeOut = 1000;
     let countTimeOuts = 0;
-    const initialMoney = 1000;
+    const initialMoney = 300;
     const rounds = [];
     const playersWins = {
         [IMPULSIVE]: 0,
@@ -33,7 +33,7 @@ const bankrupt = () => {
         }
     }
     const mostWins = findMVP(playersWins);
-    Reports(countTimeOuts, rounds, playersWins, mostWins);
+    Reports(countTimeOuts, rounds, playersWins, mostWins, numberOfGames);
 };
 
 module.exports = bankrupt;
