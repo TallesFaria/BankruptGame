@@ -4,11 +4,10 @@ const buildBoard = (file) => {
     const textLines = fs.readFileSync(file).toString().split('\n');
     const board = [];
     for (let i = 0; i < textLines.length; i++) {
-        const position = textLines[i].trim();
-        const hop = position.split(/ +/);
+        const values = textLines[i].split(/ +/);
         board[i] = {
-            price: Number(hop[0]),
-            rent: Number(hop[1]),
+            price: Number(values[0]),
+            rent: Number(values[1]),
             belongsTo: ''
         };
     }
