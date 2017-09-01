@@ -3,6 +3,14 @@
 Game inspired by Monopoly. 
 It works in the same fashion but simplified. 
 
+# How to run
+
+Requirements: NodeJs
+
+1. Download repository.
+2. run npm install.
+3. run node index.js 
+
 ### How it works?
 
 #### Begin:
