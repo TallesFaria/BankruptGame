@@ -7,9 +7,7 @@ const buyProperty = (playerBehavior, money, rent, price) => {
     if (playerBehavior === IMPULSIVE) {
         buy = true;
     } else if (playerBehavior === CAUTIOUS) {
-        //console.log('Money I have is ', money, ' and the price is ', price);
         if (money - price >= 80) {
-            //console.log(' So I Buy');
             buy = true;
         }
     } else if (playerBehavior === DEMANDING) {
@@ -19,7 +17,6 @@ const buyProperty = (playerBehavior, money, rent, price) => {
     } else {
         const random = Math.random();
         if (random > 0.5) {
-            //console.log('random: ', random);
             buy = true;
         }
     }    

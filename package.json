@@ -10,6 +10,7 @@
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
     "fs": "0.0.1-security",
+    "sprintf-js": "^1.1.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0",
     "xmlhttprequest": "^1.8.0"
